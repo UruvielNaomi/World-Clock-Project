@@ -2,7 +2,7 @@ body {
     background: #1e130c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gloock', serif;
 }
 
 h1 {
@@ -23,16 +23,17 @@ footer {
     color: #ffff;
     position: relative;
     bottom: 75px;
-    left: 10px;
-}
+    left: 20px;
+    }
 
 .image {
     width: 389px;
     height: 585px;
     border-radius: 5px; 
-    opacity: 0.6;
+    opacity: 0.5;
     display: block;
     margin: 0 auto;
+    box-shadow: 3px 3px 3px rgb(40, 35, 35);
 }
 
 .searchbar {
@@ -45,6 +46,16 @@ footer {
     text-align: center;
     max-width: 389px;
     max-height: 100px;
+    box-shadow: 3px 3px 3px rgb(40, 35, 35);
+}
+
+#cities {
+    padding: 5px 15px;
+    margin-top: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(131, 131, 131);
+    text-align: center;
 }
 
 #city, #time-stamp {
