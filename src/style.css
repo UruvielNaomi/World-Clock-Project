@@ -17,19 +17,29 @@ footer {
     bottom: 25px;
 }
 
-.content {
+.city, .time-stamp {
+    font-size: 20px;
+}
+
+.berlin, .london {
     width: 311px;
     height: 50px;
     border-radius: 5px;
     display: block;
     margin: 0 auto;
     color: #ffff;
+}
+.berlin{
     position: relative;
-    bottom: 75px;
+    bottom: 130px;
     left: 12px;
+}
+
+    .date {
+        font-size: 14px;
     }
 
-.image {
+    .image {
     width: 311px;
     height: 468px;
     border-radius: 5px; 
@@ -37,6 +47,11 @@ footer {
     display: block;
     margin: 0 auto;
     box-shadow: 3px 3px 3px rgb(40, 35, 35);
+}
+.london {
+    position: relative;
+    bottom: 110px;
+    left: 12px
 }
 .link {
     text-decoration: none;
@@ -64,12 +79,4 @@ footer {
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgb(131, 131, 131);
     text-align: center;
-}
-
-#city, #time-stamp {
-    font-size: 20px;
-}
-
-#date {
-    font-size: 14px;
 }

@@ -26,29 +26,45 @@
         <h1>World Clock</h1>
         <select name="cities" id="cities">
             <option value="">Select a city</option>
-        <option value="london">London</option>
-        <option value="berlin">Berlin</option>
-        <option value="lausanne">Lausanne</option>
-        <option value="new-york">New York</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Asia/Jakarta">Jakarta</option>
+        <option value="America/New_York">New York</option>
     </select>
     </div>
     <img class="image" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/632/original/clock.jpg?1677754185" alt="clock">
-    <div class="content">
+    <div class="berlin" id="berlin">
         <div class="row">
             <div class="col-8">
-                <span id="city">Current Location</span>
+                <span class="city" >Berlin</span>
             </div>
             <div class="col-4">
-                <span id="time-stamp">11:39:12</span>
+                <span class="time-stamp" >11:39:12</span>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
-                <span id="date">2 March 2023</span>
+                <span class="date">2 March 2023</span>
             </div>
         </div>
-       
     </div>
+
+    <div class="london" id="london">
+        <div class="row">
+            <div class="col-8">
+                <span class="city">London</span>
+            </div>
+            <div class="col-4">
+                <span class="time-stamp" >10:39:12</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <span class="date" id="london-date">2 March 2023</span>
+            </div>
+        </div>
+    </div>
+
     <footer>coded by Naomi Stacia 💜</footer>
     <footer><a class="link" href="https://github.com/UruvielNaomi/World-Clock-Project" target="_blank">click here for GitHub</a></footer>
 </class>
