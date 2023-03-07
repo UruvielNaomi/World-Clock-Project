@@ -41,8 +41,11 @@ function updateCity(event){
                   <span class="date">${cityTime.format("MMMM Do YYYY")}</span>
               </div>
           </div>`;
-    } 
-  }
+    }
+    setTimeout(()=>{
+      updateCity(event)
+    }, 1000)
+}
 
 updateTime();
 setInterval(updateTime, 1000);
