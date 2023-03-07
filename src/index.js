@@ -25,14 +25,32 @@ setInterval(updateTime, 1000);
 
 
 
-function showDateTime(event){
+function updateCity(event){
     if (event.target.value.length > 0) {
-        let currentDate = moment().tz(event.target.value).format("MMMM Do YYYY");
-        let currentTime = moment().tz(event.target.value).format("HH:mm:ss");
-
-       
+      let cityTimeZone = event.target.value;
+      let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+      let cityTime = moment().tz(cityTimeZone);
+      let citiesElement = document.querySelector("#cities");
+      citiesElement.innerHTML = `
+      <div class="city">
+          <div class="row">
+              <div class="col-8">
+                  <span class="city-name" >${cityName}</span>
+              </div>
+              <div class="col-4 col-right">
+                  <span class="time-stamp" >${cityTime.format("HH:mm:ss")}</span>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-6">
+                  <span class="date">${cityTime.format("MMMM Do YYYY")}</span>
+              </div>
+          </div>`;
+          
     }
 }
 
-let selectElement = document.querySelector("#city");
-selectElement.addEventListener("change", showDateTime);
+let citySelectElement = document.querySelector("#city");
+citySelectElement.addEventListener("change", updateCity);
+// let currentDate = moment().tz(event.target.value).format("MMMM Do YYYY");
+// let currentTime = cityTime.format("HH:mm:ss");
