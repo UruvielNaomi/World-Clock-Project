@@ -17,6 +17,25 @@ function updateTime () {
   }
 }
 
+function changeImage(){
+  let cityName = document.querySelector(".city-name");
+  if (cityName.innerHTML === "Berlin") {
+    document.getElementById("image").src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/471/original/BER.jpg?1678226115";
+  }
+  
+  if (cityName.innerHTML === "London") {
+    document.getElementById("image").src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/476/original/LON.jpg?1678228749";
+  }
+
+  if (cityName.innerHTML === "New York") {
+    document.getElementById("image").src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/477/original/NY.jpg?1678228807";
+  }
+
+  if (cityName.innerHTML === "Jakarta") {
+    document.getElementById("image").src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/478/original/fawazlul-rizqi-2lRqBfCAXLk-unsplash.jpg?1678228980";
+  }
+}
+
 function updateCity(event){
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current"){
@@ -44,7 +63,8 @@ function updateCity(event){
     }
     setTimeout(()=>{
       updateCity(event)
-    }, 1000)
+    }, 1000);
+    changeImage();
 }
 
 updateTime();
