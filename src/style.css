@@ -22,7 +22,7 @@ footer {
 }
 
 .berlin, .london {
-    width: 311px;
+    width: 280px;
     height: 50px;
     border-radius: 5px;
     display: block;
@@ -32,7 +32,7 @@ footer {
 .berlin{
     position: relative;
     bottom: 130px;
-    left: 12px;
+    left: 5px;
 }
 
     .date {
@@ -48,10 +48,15 @@ footer {
     margin: 0 auto;
     box-shadow: 3px 3px 3px rgb(40, 35, 35);
 }
+.col-right {
+    position: relative;
+    right: 8px;
+}
+
 .london {
     position: relative;
     bottom: 110px;
-    left: 12px
+    left: 5px
 }
 .link {
     text-decoration: none;
