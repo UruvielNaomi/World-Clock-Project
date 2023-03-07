@@ -27,10 +27,12 @@ setInterval(updateTime, 1000);
 
 function showDateTime(event){
     if (event.target.value.length > 0) {
-        let currentTime = moment().tz(event.target.value).format("MMMM Do YYYY")
-        
+        let currentDate = moment().tz(event.target.value).format("MMMM Do YYYY");
+        let currentTime = moment().tz(event.target.value).format("HH:mm:ss");
+
+       
     }
 }
 
-let selectElement = document.querySelector("#cities");
+let selectElement = document.querySelector("#city");
 selectElement.addEventListener("change", showDateTime);

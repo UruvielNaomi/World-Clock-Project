@@ -24,7 +24,7 @@
     <class class="container">
     <div class="searchbar">
         <h1>World Clock</h1>
-        <select name="cities" id="cities">
+        <select name="city" id="city">
             <option value="">Select a city</option>
         <option value="Europe/London">London</option>
         <option value="Europe/Berlin">Berlin</option>
@@ -33,10 +33,12 @@
     </select>
     </div>
     <img class="image" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/632/original/clock.jpg?1677754185" alt="clock">
-    <div class="berlin" id="berlin">
+    
+  <div class="cities">
+    <div class="city" id="berlin">
         <div class="row">
             <div class="col-8">
-                <span class="city" >Berlin</span>
+                <span class="city-name" >Berlin</span>
             </div>
             <div class="col-4 col-right">
                 <span class="time-stamp" ></span>
@@ -49,10 +51,10 @@
         </div>
     </div>
 
-    <div class="london" id="london">
+    <div class="city" id="london">
         <div class="row">
             <div class="col-8">
-                <span class="city">London</span>
+                <span class="city-name">London</span>
             </div>
             <div class="col-4 col-right">
                 <span class="time-stamp" ></span>
@@ -64,6 +66,7 @@
             </div>
         </div>
     </div>
+  </div>
 
     <footer>coded by Naomi Stacia 💜</footer>
     <footer><a class="link" href="https://github.com/UruvielNaomi/World-Clock-Project" target="_blank">click here for GitHub</a></footer>
